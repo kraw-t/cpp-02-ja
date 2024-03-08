@@ -2,8 +2,8 @@
 
 #include <iostream>
 
-Car::Car(std::string make, std::string model, int year, double price)
-    : make(make), model(model), year(year), price(price) {
+Car::Car(std::string make, std::string model, int year, double price, Tire tire)
+    : make(make), model(model), year(year), price(price), tire(tire) {
     if (price < 0) {
         std::cerr << "Negative Car Price!" << "\n";
     }

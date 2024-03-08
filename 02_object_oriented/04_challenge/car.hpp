@@ -1,9 +1,10 @@
 #pragma once
 #include <string>
+#include "tire.hpp"
 
 class Car {
 public:
-    Car(std::string make, std::string model, int year, double price);
+    Car(std::string make, std::string model, int year, double price, Tire tire);
 
     void setPrice(double price);
 
@@ -21,4 +22,5 @@ private:
     std::string model;
     int year;
     double price;
+    Tire tire;
 };

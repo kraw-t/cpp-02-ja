@@ -2,11 +2,12 @@
 #include <string>
 #include "garage.hpp"
 #include "car.hpp"
+#include "tire.hpp"
 
 int main() {
-  Car yaris = Car("toyota", "yaris", 2020, 14000);
-  Car jazz = Car("honda", "jazz", 2021, 14500);
-  Car micra = Car("nissan", "micra", 2022, 15000);
+  Car yaris = Car("toyota", "yaris", 2020, 14000, Tire("205/50R16", TireType::summer));
+  Car jazz = Car("honda", "jazz", 2021, 14500, Tire("195/45R15", TireType::snow));
+  Car micra = Car("nissan", "micra", 2022, 15000, Tire("205/40R16", TireType::all_season));
 
   Garage garage;
 
